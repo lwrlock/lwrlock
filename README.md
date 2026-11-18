@@ -1,33 +1,21 @@
-<div align="center">
-  <h1>Furkan (<code>@lwrlock</code>)</h1>
-  <p><b>18 y/o Computer Engineering Student &bull; Linux Kernel, eBPF, x86_64 Assembly &amp; AI Systems Developer</b></p>
-  <p>Building bare-metal low-overhead Linux telemetry, hardware power/thermal optimization, eBPF tracers, and GTK4 desktop suites.</p>
-</div>
+### Furkan (`@lwrlock`)
 
----
+Computer Engineering student working on Linux hardware telemetry, power management utilities, eBPF experiments, and GTK4 desktop tools in C and Python.
 
-### Flagship Showcase — FF Linux Kernel & Hardware Suite
+### Repositories
 
-<p align="center">
-  <a href="https://github.com/lwrlock/ff-power-manager">
-    <img src="https://raw.githubusercontent.com/lwrlock/ff-power-manager/main/docs/screenshots/showcase.gif" alt="FF Power Manager Cosmic Bento UI" width="880"/>
-  </a>
-</p>
+| Project | Stack | Summary | Preview |
+| :--- | :--- | :--- | :--- |
+| [ff-power-manager](https://github.com/lwrlock/ff-power-manager) | `C`, `x86_64 ASM`, `Python`, `GTK4` | Laptop power profiles, `ffctl` CLI, `s2idle` standby drain reports, per-PID blame, adaptive refresh (`60↔120Hz`), and optional ISH ToF presence lock | [Pages](https://lwrlock.github.io/ff-power-manager/) |
+| [ebpf-latency-guard](https://github.com/lwrlock/ebpf-latency-guard) | `C`, `eBPF`, `Python`, `GTK4` | Unprivileged PSI, `schedstat`, and `/proc/interrupts` latency sampler paired with a compiled `sched_wakeup`/`sched_switch` eBPF tracepoint object | [Screenshot](https://raw.githubusercontent.com/lwrlock/ebpf-latency-guard/main/docs/screenshots/overview.png) |
+| [vram-atlas](https://github.com/lwrlock/vram-atlas) | `C`, `Python`, `GTK4` | Reads DRM GPU sysfs (`xe`/`amdgpu`), Intel NPU (`intel_vpu`), `/proc/meminfo` shared pool, and `llama.cpp` `/metrics` throughput | [Screenshot](https://raw.githubusercontent.com/lwrlock/vram-atlas/main/docs/screenshots/overview.png) |
+| [waylens-privacy](https://github.com/lwrlock/waylens-privacy) | `C`, `Python`, `GTK4` | USB HID/storage device baseline checker, ST VL53L1 presence lock reader, `ssh-add -D` trigger, and SHA-256 hash-chained `audit.jsonl` logger | [Screenshot](https://raw.githubusercontent.com/lwrlock/waylens-privacy/main/docs/screenshots/overview.png) |
+| [mempulse](https://github.com/lwrlock/mempulse) | `C`, `Python`, `GTK4` | Inspects Linux MGLRU (`lru_gen`), `zram0/mm_stat`, memory PSI, and per-process RSS/swap usage | [Screenshot](https://raw.githubusercontent.com/lwrlock/mempulse/main/docs/screenshots/overview.png) |
+| [netpulse-bpf](https://github.com/lwrlock/netpulse-bpf) | `C`, `eBPF`, `Python`, `GTK4` | Reads NIC counters, `tcp_congestion_control`, `default_qdisc`, `/proc/net/snmp` retransmits, and process sockets, plus a `sock_ops` eBPF hook | [Screenshot](https://raw.githubusercontent.com/lwrlock/netpulse-bpf/main/docs/screenshots/overview.png) |
+| [nvme-sentinel](https://github.com/lwrlock/nvme-sentinel) | `C`, `Python`, `GTK4` | Displays NVMe `hwmon` temperature, PCIe link speed/width, `default_ps_max_latency_us` (APST), and `/sys/block/nvme*` IOPS | [Screenshot](https://raw.githubusercontent.com/lwrlock/nvme-sentinel/main/docs/screenshots/overview.png) |
+| [quant-wealth-terminal](https://github.com/lwrlock/quant-wealth-terminal) | `FastAPI`, `SQLite`, `JS` | Portfolio tracker, TEFAS fund data viewer, and simple strategy backtester | — |
 
-| Repository | Stack | Core Purpose | Live Preview |
-| :--- | :--- | :--- | :---: |
-| [**`ff-power-manager`**](https://github.com/lwrlock/ff-power-manager) | `C` · `x86_64 ASM` · `GTK4` | Universal laptop power suite, per-process `~W` blame & Freeze, USB-C PD, dGPU zombie watch, Multi-DE 120Hz ARR, `s2idle` guard | [Pages](https://lwrlock.github.io/ff-power-manager/) |
-| [**`ebpf-latency-guard`**](https://github.com/lwrlock/ebpf-latency-guard) | `eBPF CO-RE` · `C` · `GTK4` | Micro-stutter & scheduling latency detective (`sched_wakeup`/`sched_switch`, PSI, `schedstat`, IRQ storms) | [Preview](https://raw.githubusercontent.com/lwrlock/ebpf-latency-guard/main/docs/screenshots/overview.png) |
-| [**`vram-atlas`**](https://github.com/lwrlock/vram-atlas) | `C` · `Intel Xe / NPU` · `GTK4` | Unified Intel Xe iGPU, Intel NPU (`intel_vpu`), UMA RAM & local LLM `Tokens/Watt` matrix | [Preview](https://raw.githubusercontent.com/lwrlock/vram-atlas/main/docs/screenshots/overview.png) |
-| [**`waylens-privacy`**](https://github.com/lwrlock/waylens-privacy) | `C` · `HID ToF` · `GTK4` | Zero-Trust IR ToF perimeter radar, Anti-BadUSB HID guard, `ssh-add -D` vault & SHA-256 audit chain | [Preview](https://raw.githubusercontent.com/lwrlock/waylens-privacy/main/docs/screenshots/overview.png) |
-| [**`mempulse`**](https://github.com/lwrlock/mempulse) | `C` · `MGLRU` · `GTK4` | Linux MGLRU (`lru_gen`), Memory PSI & `zstd` ZRAM headroom analytics HUD | [Preview](https://raw.githubusercontent.com/lwrlock/mempulse/main/docs/screenshots/overview.png) |
-| [**`netpulse-bpf`**](https://github.com/lwrlock/netpulse-bpf) | `eBPF sock_ops` · `C` · `GTK4` | TCP BBR / `fq` congestion analyzer, SNMP retransmits & per-PID socket profiler | [Preview](https://raw.githubusercontent.com/lwrlock/netpulse-bpf/main/docs/screenshots/overview.png) |
-| [**`nvme-sentinel`**](https://github.com/lwrlock/nvme-sentinel) | `C` · `PCIe Gen4 APST` · `GTK4` | NVMe controller thermal, PS4 sleep latency & live block queue IOPS monitor | [Preview](https://raw.githubusercontent.com/lwrlock/nvme-sentinel/main/docs/screenshots/overview.png) |
-| [**`quant-wealth-terminal`**](https://github.com/lwrlock/quant-wealth-terminal) | `FastAPI` · `SQLite` · `JS` | Full-stack personal wealth, TEFAS fund analytics & walk-forward backtesting terminal | — |
-
----
-
-### Core Technical Stack
-- **Systems & Kernel:** `C` · `x86_64 Assembly` · `eBPF (clang -target bpf)` · `Linux sysfs / procfs / hwmon / RAPL / DRM / Accel`
-- **Desktop & Graphics:** `GTK 4` · `Libadwaita` · `Cairo` · `Wayland D-Bus` · `Mutter IdleMonitor` · `GNOME Shell Extensions`
-- **Security & Packaging:** `PolicyKit` · `AppStream` · `Debian (.deb)` · `Fedora (.rpm)` · `SHA-256 Audit Chains`
+### Stack
+- **Languages:** C, Python, x86_64 Assembly, restricted C (eBPF)
+- **Linux Interfaces:** `sysfs`, `procfs`, `hwmon`, `powercap`/RAPL, DRM/`accel`, PolicyKit, Wayland D-Bus
+- **UI:** GTK 4, Libadwaita, Cairo
