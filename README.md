@@ -12,12 +12,10 @@ Computer Engineering student building Linux kernel/hardware telemetry tools, det
 
 | Project | Stack | Theme & Architecture | Repository |
 | :--- | :--- | :--- | :--- |
-| [flowforge](https://github.com/lwrlock/flowforge) | `FastAPI`, `Asyncio`, `SQLite WAL`, `Canvas` | Deterministic DAG Workflow Engine, CPM Critical Path, Saga Compensation, Time-Travel Replay & Linear-inspired Left-Rail Observatory | [Repo](https://github.com/lwrlock/flowforge) |
-| [cortexscope](https://github.com/lwrlock/cortexscope) | `FastAPI`, `Ollama Proxy`, `Intel RAPL`, `SVG` | Streaming Local LLM Telemetry Proxy (`TTFT`/`ITL` + `Joules/100tok`), A/B Arena & Charcoal Analog VU Mastering Console | [Repo](https://github.com/lwrlock/cortexscope) |
-| [sonatarack](https://github.com/lwrlock/sonatarack) | `FastAPI`, `NumPy/SciPy`, `Web Audio API` | Polyphonic FM Synth, Bjorklund Euclidean Sequencer, 48-Band FFT, WAV Export & Walnut/Vinyl Hardware Rack | [Repo](https://github.com/lwrlock/sonatarack) |
-| [hexward](https://github.com/lwrlock/hexward) | `FastAPI`, `PE64/ELF64`, `Pillow`, `NumPy` | Game Modding VFS Load-Order Solver (Kahn DAG), 3-Way Config Merger, Shannon Entropy/AOB Dissector & Outrun Synthwave UI | [Repo](https://github.com/lwrlock/hexward) |
-| [quantpress](https://github.com/lwrlock/quantpress) | `FastAPI`, `NumPy`, `SciPy`, `Canvas` | FIFO Limit Order Book Simulator, Zero-Lookahead Walk-Forward Backtester, VaR/CVaR Risk & Swiss Editorial Broadsheet | [Repo](https://github.com/lwrlock/quantpress) |
-| [echoroom](https://github.com/lwrlock/echoroom) | `FastAPI`, `NumPy`, `Acoustics Physics` | 2D Specular Acoustic Ray-Tracer, Room Standing-Wave Eigenmode Field, Eyring/Sabine RT60 & Nordic Aurora Observatory | [Repo](https://github.com/lwrlock/echoroom) |
+| [dev-atelier](https://github.com/lwrlock/dev-atelier) | `FastAPI`, `Asyncio`, `SQLite WAL`, `Intel RAPL`, `PE64/ELF64`, `Canvas/SVG` | Unified 3-studio developer workbench (`dev-atelier` CLI): **FlowForge** (DAG orchestrator, CPM critical path, saga & replay), **CortexScope** (Ollama proxy, TTFT/ITL + RAPL energy console), and **HexWard** (modding VFS solver, 3-way merge & binary/texture dissector) | [Repo](https://github.com/lwrlock/dev-atelier) |
+| [sonatarack](https://github.com/lwrlock/sonatarack) | `FastAPI`, `NumPy/SciPy`, `Web Audio API`, `Acoustics Physics` | Unified Audio DSP & Spatial Acoustics Suite: Polyphonic FM Synth, Bjorklund Euclidean Sequencer, 48-Band FFT & Walnut Hardware Rack + 2D Specular Acoustic Ray-Tracer, Standing-Wave Eigenmodes & Eyring/Sabine RT60 Observatory (`/acoustics`) | [Repo](https://github.com/lwrlock/sonatarack) |
+
+> *Standalone prototypes (`flowforge`, `cortexscope`, `hexward` -> `dev-atelier`; `echoroom` -> `sonatarack`) are consolidated into the two flagship suites above.*
 
 ### Linux Systems, Kernel, eBPF & Hardware Utilities
 
